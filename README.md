@@ -1,33 +1,58 @@
 # Python Readme.md file generator
 
-A Python script that prompts the user using `InquirerPy` for details about their GitHub project.
+A Python script that prompts the user with `InquirerPy` for details about their GitHub project and generates a
+professional `README.md` file.
 
-The questions include:
+The program uses InquirerPy's [Alternate Syntax](https://inquirerpy.readthedocs.io/en/latest/#alternate-syntax) which is
+> more flexible, easier to customise and also provides IDE type hints/completions.
 
-* [ ] Project Title
-* [ ] Description
-* [ ] Installation Instructions
-* [ ] Usage Information
-* [ ] License (choose from a dropdown list)
-* [ ] Author Name
-* [ ] Contact Information
+## Features
+
+The script will prompt the user for the following:
+
+* [X] Project Title
+* [X] Description
+* [X] Installation Instructions
+* [X] Usage Information
+* [X] License (choose from a dropdown list)
+* [X] Author Name
+* [X] Contact Information
 
 The application then generates a `README.md` file using [GitHub-flavored markdown](https://github.github.com/gfm/).
 
-## Setup
+## Installation
 
-- Install Python3 based on official documentation [Setup and Usage](https://docs.python.org/3.13/using/index.html)
-- Prepare virtual environment
-- Install requirements:
-    - `pip install -r src/requirements.txt`
+- Ensure that a recent version of Python 3 is installed on your system (3.10+).
+- If not, then install Python3 based on official
+  documentation [Setup and Usage](https://docs.python.org/3.13/using/index.html)
+- Clone the repository to your local machine.
+- Prepare virtual environment.
+- Follow the on-screen prompts to create your `README.md` file.
 
 ## Usage
 
-Run the program
+Once installed, a new command `generate-readme` will be available in your terminal.
+Simply run it to start the generator.
 
-    python3 src/main.py
+You can also run the program manually:
 
-Follow instructions and answer all the questions.
+    python3 src/readme_generator/main.py
+
+Or after installing simply use:
+
+    generate-readme
+
+Please follow instructions and answer all the questions.
+
+## For Developers
+
+If you want to contribute to the project, you can set up an editable installation.
+This allows you to modify the source code and have the changes immediately reflected
+when you run the command.
+
+1. Clone the repository as shown above.
+2. Install the project with its development dependencies:
+3. Install the package using pip3. This will automatically handle all dependencies.
 
 ## Useful Resources
 
@@ -37,3 +62,4 @@ Follow instructions and answer all the questions.
 - [PyInquirer Documentation](https://github.com/CITGuru/PyInquirer)
 - [Creating a `requirements.txt`](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
 - [Python Virtual Environments](https://docs.python.org/3/library/venv.html)
+- [Licensing a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
