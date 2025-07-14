@@ -34,6 +34,8 @@ The application then generates a `README.md` file using [GitHub-flavored markdow
 
 ## Usage
 
+[![Watch the video](https://github.com/KamilWo/step8up-week6-readme-generator/blob/main/video/generate-readme.png)](https://youtu.be/kspucmBjIOs)
+
 Once installed, a new command `generate-readme` will be available in your terminal.
 Simply run it to start the generator.
 
