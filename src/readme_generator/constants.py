@@ -5,6 +5,9 @@ More licenses available here:
   https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/
     customizing-your-repository/licensing-a-repository
 """
+
+import os
+
 LICENSES = {
     "none": "None",
     "apache_2_0": "Apache License 2.0",
@@ -22,4 +25,8 @@ LICENSES = {
     "the_unlicense": "The Unlicense",
 }
 
-TEMPLATE_TYPES = {"Python"}
+PROJECT_LANGUAGES = {"Python", "Node.js"}
+# FILE_LOCATIONS = {
+#     "Current directory": os.getcwd(),
+#     "Home directory": "~/" if os.name == "posix" else "C:\\",
+# }

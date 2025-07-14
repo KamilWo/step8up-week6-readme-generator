@@ -10,6 +10,9 @@ The program uses InquirerPy's [Alternate Syntax](https://inquirerpy.readthedocs.
 
 The script will prompt the user for the following:
 
+* [X] File Name
+* [X] File Location
+* [X] Project Language
 * [X] Project Title
 * [X] Description
 * [X] Installation Instructions
