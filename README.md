@@ -28,26 +28,43 @@ The application then generates a `README.md` file using [GitHub-flavored markdow
 - Ensure that a recent version of Python 3 is installed on your system (3.10+).
 - If not, then install Python3 based on official
   documentation [Setup and Usage](https://docs.python.org/3.13/using/index.html)
-- Clone the repository to your local machine.
 - Prepare virtual environment.
-- Follow the on-screen prompts to create your `README.md` file.
+- Activate virtual environment and then install the application directly from the Github repository:
+```shell
+pip install git+https://github.com/KamilWo/step8up-week6-readme-generator
+```
+- You can also clone the repository to your local machine:
+```shell
+git clone https://github.com/KamilWo/step8up-week6-readme-generator
+cd step8up-week6-readme-generator
+pip3 install -r requirements.txt
+```
+
 
 ## Usage
-
-[![Watch the video](https://github.com/KamilWo/step8up-week6-readme-generator/blob/main/video/generate-readme.png)](https://youtu.be/kspucmBjIOs)
 
 Once installed, a new command `generate-readme` will be available in your terminal.
 Simply run it to start the generator.
 
+```shell
+generate-readme
+```
+
 You can also run the program manually:
+```shell
+cd step8up-week6-readme-generator
+# Activate your environment, e.g.
+source venv/bin/activate
+# Run the script
+python3 src/readme_generator/main.py
+```
 
-    python3 src/readme_generator/main.py
+Follow the on-screen prompts to create your `README.md` file by answering all the questions.
 
-Or after installing simply use:
+Video showing usage:
 
-    generate-readme
+[![Watch the video](https://github.com/KamilWo/step8up-week6-readme-generator/blob/main/video/generate-readme.png)](https://youtu.be/kspucmBjIOs)
 
-Please follow instructions and answer all the questions.
 
 ## For Developers
 
@@ -55,9 +72,24 @@ If you want to contribute to the project, you can set up an editable installatio
 This allows you to modify the source code and have the changes immediately reflected
 when you run the command.
 
-1. Clone the repository as shown above.
-2. Install the project with its development dependencies:
-3. Install the package using pip3. This will automatically handle all dependencies.
+1. Clone the repository
+```shell
+git clone https://github.com/KamilWo/step8up-week6-readme-generator
+```
+2. Activate virtual environment
+```shell
+cd step8up-week6-readme-generator
+# Activate your environment, e.g.
+source venv/bin/activate
+```
+3. Install the package using `pip` or `pip3`. This will automatically handle all dependencies, e.g.
+```shell
+pip3 install -r requirements.txt
+```
+
+If you have any questions, please submit issues:
+
+https://github.com/KamilWo/step8up-week6-readme-generator/issues
 
 ## Useful Resources
 
